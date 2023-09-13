@@ -11,10 +11,8 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoSVH from '@/images/logos/SVH.svg'
+import logoKU from '@/images/logos/KU.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -174,35 +172,28 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'University of Kansas',
+      title: 'Full Stack Student Developer',
+      logo: logoKU,
+      start: 'March 2023',
+      end: 'September 2023'
+    },
+    {
+      company: 'Stormont Vail Health',
+      title: 'Emergency Department Registered Nurse',
+      logo: logoSVH,
+      start: 'September 2020',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
-    },
-    {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Stormont Vail Health',
+      title: 'Emergency Department Patient Care Technician',
+      logo: logoSVH,
+      start: 'December 2019',
+      end: 'September 2020',
     },
   ]
 
@@ -260,32 +251,29 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Full Stack Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+          Hi, I'm Dallas Moore. I'm an ambitious professional who recently completed the Full Stack Development Bootcamp at the University of Kansas, dedicated to expanding my web development skills. Passionate about technology, I stay ahead of industry trends and thrive in high-pressure environments. With strong problem-solving abilities, I aim to create impactful and user-friendly web applications.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/thedallasmoore"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
             <SocialLink
-              href="https://instagram.com"
+              href="https://instagram.com/thedallasmoore"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/JohnDallasMoore"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/john-dallas-moore/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
