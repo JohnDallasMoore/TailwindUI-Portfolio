@@ -58,58 +58,57 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
+            I’m Dallas Moore. I live in Kansas, where I design the future.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              From a young age, I was captivated by the world of technology. I
+              can still vividly recall the days when I would immerse myself in
+              the intricate world of computers, delving into terminal games and
+              experimenting with EMACS. This early fascination set the stage for
+              a lifelong journey of exploration and innovation.
             </p>
+
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              Recently, I achieved a major milestone in my journey by completing
+              the Full Stack Development Bootcamp at the University of Kansas.
+              This experience has equipped me with a solid foundation in web
+              development, and I'm now poised to embark on the next exciting
+              chapter of my career.
             </p>
+
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
-            </p>
-            <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              Currently, I serve as an Emergency Department Registered Nurse,
+              where I've honed my skills in critical care and compassionate
+              patient care. While my nursing journey has been incredibly
+              rewarding, I'm also passionate about merging my healthcare
+              background with my tech interests. My goal is to transition into
+              the tech industry, specifically as a web developer or software
+              engineer. I aspire to contribute to innovative solutions that have
+              a positive impact on people's lives.
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={TwitterIcon}>
+            <SocialLink href="https://twitter.com/thedallasmoore" icon={TwitterIcon}>
               Follow on Twitter
             </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+            <SocialLink href="https://instagram.com/thedallasmoore" icon={InstagramIcon} className="mt-4">
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <SocialLink href="https://github.com/JohnDallasMoore" icon={GitHubIcon} className="mt-4">
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink href="https://www.linkedin.com/in/john-dallas-moore/" icon={LinkedInIcon} className="mt-4">
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
-              href="mailto:spencer@planetaria.tech"
+              href="mailto:moore.johndallas@gmail.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              spencer@planetaria.tech
+              moore.johndallas@gmail.com
             </SocialLink>
           </ul>
         </div>
