@@ -1,11 +1,12 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 
+
 export const article = {
-  author: 'Adam Wathan',
-  date: '2022-07-14',
-  title: 'Rewriting the cosmOS kernel in Rust',
+  author: 'Dallas Moore',
+  date: '2023-09-13',
+  title: 'A Week into React.gg: Exploring the Depths of React',
   description:
-    'When we released the first version of cosmOS last year, it was written in Go. Go is a wonderful programming language, but it’s been a while since I’ve seen an article on the front page of Hacker News about rewriting some important tool in Go and I see articles on there about rewriting things in Rust every single week.',
+    'Diving into React.gg for a week-long adventure into the world of React.',
 }
 
 export const metadata = {
@@ -15,87 +16,55 @@ export const metadata = {
 
 export default (props) => <ArticleLayout article={article} {...props} />
 
-When we released the first version of cosmOS last year, it was written in Go. Go is a wonderful programming language with a lot of benefits, but it’s been a while since I’ve seen an article on the front page of Hacker News about rewriting some important tool in Go and I see articles on there about rewriting things in Rust every single week.
 
-```rust
-use ferris_says::say;
-use std::io::{stdout, BufWriter};
+# A Week into React.gg: Exploring the Depths of React
 
-fn main() {
-    let stdout = stdout();
-    let message = String::from("Hello fellow hackers");
-    let width = message.chars().count();
+It's been a thrilling journey so far, diving headfirst into the world of React with [React.gg](https://react.gg). In just a week, I've encountered an abundance of fascinating content that has completely reshaped my perspective on React. Today, I'm excited to share some of the key insights and learnings I've gained during this exhilarating week of exploration.
 
-    let mut writer = BufWriter::new(stdout.lock());
-    say(message.as_bytes(), width, &mut writer).unwrap();
-}
-```
+## Why React?
 
-I derive a large amount of my self-worth from whether or not Hacker News is impressed with the work I'm doing, so when I realized this, I cancelled all of our existing projects and started migrating everything to Rust immediately.
+Before I delved into React, I couldn't help but wonder why it gained such immense popularity despite initial skepticism from developers. React was a game-changer, and to understand its journey, we needed to rewind to the days before it even existed.
 
-## Sermone fata
+In the pre-React era, web development was dominated by frameworks like jQuery, Backbone, and Angular. jQuery simplified DOM manipulation, but it had its pitfalls, mainly in dealing with shared mutable states and spaghetti-like code.
 
-Lorem markdownum, bracchia in redibam! Terque unda puppi nec, linguae posterior
-in utraque respicere candidus Mimasque formae; quae conantem cervice. Parcite
-variatus, redolentia adeunt. Tyrioque dies, naufraga sua adit partibus celanda
-torquere temptata, erit maneat et ramos, [iam](#) ait dominari
-potitus! Tibi litora matremque fumantia condi radicibus opusque.
+Backbone.js introduced the Model-View-Controller pattern, providing a structured approach to web development. However, it remained minimal and unopinionated, requiring developers to build their own Views and templating strategies.
 
-Deus feram verumque, fecit, ira tamen, terras per alienae victum. Mutantur
-levitate quas ubi arcum ripas oculos abest. Adest [commissaque
-victae](#) in gemitus nectareis ire diva
-dotibus ora, et findi huic invenit; fatis? Fractaque dare superinposita
-nimiumque simulatoremque sanguine, at voce aestibus diu! Quid veterum hausit tu
-nil utinam paternos ima, commentaque.
+Angular.js, on the other hand, offered an all-in-one framework with two-way data binding, routing, controllers, and more. It was a boon for developers transitioning from backend to frontend. However, its implicit state changes led to complexity and performance issues.
 
-```c
-exbibyte_wins = gigahertz(3);
-grayscaleUtilityClient = control_uat;
-pcmciaHibernate = oop_virus_console(text_mountain);
-if (stateWaisFirewire >= -2) {
-    jfs = 647065 / ldapVrml(tutorialRestore, 85);
-    metal_runtime_parse = roomComputingResolution - toolbarUpload +
-            ipx_nvram_open;
-} else {
-    maximizeSidebar *= suffix_url(flatbed + 2, requirements_encoding_node +
-            only_qbe_media, minicomputer);
-}
-```
+Despite their differences, these frameworks had one commonality – Models. Models were observable objects that connected with Views, encouraging mutation and complexity. React aimed to solve this problem by making the View a function of the application's State.
 
-Aere repetiti cognataque natus. Habebat vela solutis saepe munus nondum adhuc
-oscula nomina pignora corpus deserat.
+## The Declarative Paradigm
 
-## Lethaei Pindumve me quae dinumerat Pavor
+React's core innovation was the idea that the View should be a function of the application's State, represented as `v = f(s)`. It shifted the focus from imperative code to a declarative approach, which allowed developers to describe UI components' appearance directly. JSX, the lovechild of HTML and JavaScript, facilitated this shift and provided a powerful and readable way to create UI components.
 
-Idem se saxa fata pollentibus geminos; quos pedibus. Est urnis Herses omnes nec
-divite: et ille illa furit sim verbis Cyllenius.
+While JSX initially faced resistance, it proved invaluable in adhering to the principle of Separation of Concerns. React argued that rendering, state, UI, and even styling were part of the View's concern and should be described within components. This interpretation challenged traditional separation but led to cleaner and more maintainable code.
 
-1. Captus inpleverunt collo
-2. Nec nam placebant
-3. Siquos vulgus
-4. Dictis carissime fugae
-5. A tacitos nulla viginti
+React's component-based API further reinforced this declarative paradigm. Components became the building blocks of UI, allowing developers to compose complex interfaces with ease.
 
-Ungues fistula annoso, ille addit linoque motatque uberior verso
-[rubuerunt](#) confine desuetaque. _Sanguine_ anteit
-emerguntque expugnacior est pennas iniqui ecce **haeret** genus: peiora imagine
-fossas Cephisos formosa! Refugitque amata [refelli](#)
-supplex. Summa brevis vetuere tenebas, hostes vetantis, suppressit, arreptum
-regna. Postquam conpescit iuvenis habet corpus, et erratica, perdere, tot mota
-ars talis.
+## Imperative vs. Declarative Programming
 
-```c
-digital.webcam_dual_frequency = webmasterMms;
-if (5 + language_standalone_google) {
-    cc_inbox_layout *= file_character;
-    task += p;
-    lockUnicode += enterprise_monochrome(tokenFunctionPersonal, keyVirtual,
-            adf);
-}
-windows_binary_esports(87734, array(restoreRomTopology, adRaw(407314),
-        dongleBashThumbnail), interpreter);
-```
+As I ventured deeper into React, I encountered the concepts of imperative and declarative programming. It turns out React is declarative, but what does that mean?
 
-Sit volat naturam; motu Cancri. Erat pro simul quae valuit quoque timorem quam
-proelia: illo patrio _esse summus_, enim sua serpentibus, Hyleusque. Est coniuge
-recuso; refert Coroniden ignotos manat, adfectu.
+Imperative programming tells you how to do something, while declarative programming focuses on what to do. The difference might seem subtle, but it's essential. Declarative code is more concise, readable, and less error-prone.
+
+To illustrate this, consider ordering a table at a restaurant. The imperative approach tells you how to do it step by step, while the declarative approach simply states your request – a table for two, please.
+
+In code, imperative approaches often involve explicit steps and mutations, making them harder to follow. Declarative code, like React's JSX, emphasizes what you want to achieve, not how to achieve it.
+
+## Pure Functions
+
+In my quest to master React, I delved into the significance of pure functions. These are functions that follow strict rules – they have no side effects and produce consistent outputs for the same inputs.
+
+Side effects, like mutating external state or making network requests, introduce unpredictability into functions. React encourages functions that adhere to two critical rules: no side effects and consistent outputs. These rules improve predictability, making functions easier to understand, test, and reuse.
+
+Pure functions are composable, cacheable, and readable. They simplify complex tasks and enhance code quality. By embracing pure functions, you not only write better React code but also foster a more reliable and maintainable application.
+
+## Wrapping Up
+
+My first week with React.gg has been an eye-opening experience. React's journey from skepticism to universal acclaim has been nothing short of remarkable. Its declarative paradigm, component-based API, and the importance of pure functions have reshaped how I approach web development.
+
+In a world where predictability is key to bug-free applications, React's principles offer a path to excellence. As I continue this exciting journey, I look forward to mastering React and applying these principles to create amazing web applications.
+
+Whether you're a seasoned developer or just starting with React, I highly recommend diving into [React.gg](https://react.gg) to explore the depths of React's capabilities. Stay tuned for more exciting adventures on my React learning journey!
+
+Happy coding!
