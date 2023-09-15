@@ -1,6 +1,24 @@
+import Image from 'next/image'
+
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
+
+import bootstrapLogo from '@/images/logos/bootstrap.svg'
+import cssLogo from '@/images/logos/css.svg'
+import gitLogo from '@/images/logos/git.svg'
+import htmlLogo from '@/images/logos/html.svg'
+import javascriptLogo from '@/images/logos/javascript.svg'
+import jqueryLogo from '@/images/logos/jquery.svg'
+import mongoLogo from '@/images/logos/mongo.svg'
+import mysqlLogo from '@/images/logos/mysql.svg'
+import nodeLogo from '@/images/logos/node.svg'
+import reactLogo from '@/images/logos/react.svg'
+import sequelizeLogo from '@/images/logos/sequelize.svg'
+import tailwindLogo from '@/images/logos/tailwind.svg'
+import typescriptLogo from '@/images/logos/typescript.svg'
+import vueLogo from '@/images/logos/vue.svg'
+import expressLogo from '@/images/logos/express.svg'
 
 function ToolsSection({ children, ...props }) {
   return (
@@ -23,6 +41,89 @@ function Tool({ title, href, children }) {
   )
 }
 
+const techs = [
+  {
+    name: 'HTML',
+    logo: htmlLogo,
+  },
+  {
+    name: 'CSS',
+    logo: cssLogo,
+  },
+  {
+    name: 'JavaScript',
+    logo: javascriptLogo,
+  },
+  {
+    name: 'TypeScript',
+    logo: typescriptLogo,
+  },
+  {
+    name: 'React',
+    logo: reactLogo,
+  },
+  {
+    name: 'Vue',
+    logo: vueLogo,
+  },
+  {
+    name: 'jQuery',
+    logo: jqueryLogo,
+  },
+  {
+    name: 'Bootstrap',
+    logo: bootstrapLogo,
+  },
+  {
+    name: 'Tailwind',
+    logo: tailwindLogo,
+  },
+  {
+    name: 'Node',
+    logo: nodeLogo,
+  },
+  {
+    name: 'GitHub',
+    logo: gitLogo,
+  },
+  {
+    name: 'MySQL',
+    logo: mysqlLogo,
+  },
+  {
+    name: 'Mongo',
+    logo: mongoLogo,
+  },
+  {
+    name: 'Express',
+    logo: expressLogo,
+  },
+  {
+    name: 'Sequelize',
+    logo: sequelizeLogo,
+  },
+]
+
+function TechCard() {
+  return (
+    <ul
+      role="list"
+      className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+    >
+      {techs.map((tech) => (
+        <Card as="li" key={tech.name}>
+          <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <Image src={tech.logo} alt="" className="h-8 w-8" unoptimized />
+          </div>
+          <h2 className="mt-6 text-center text-base font-semibold text-zinc-800 dark:text-zinc-100">
+            {tech.name}
+          </h2>
+        </Card>
+      ))}
+    </ul>
+  )
+}
+
 export const metadata = {
   title: 'Uses',
   description: 'Software I use, gadgets I love, and other things I recommend.',
@@ -36,74 +137,42 @@ export default function Uses() {
     >
       <div className="space-y-20">
         <ToolsSection title="Workstation">
-          <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
+          <Tool title="16” MacBook Pro, M2 Max, 64GB RAM (2023)">
             I was using an Intel-based 16” MacBook Pro prior to this and the
-            difference is night and day. I’ve never heard the fans turn on a
-            single time, even under the incredibly heavy loads I put it through
-            with our various launch simulations.
+            difference is night and day. This laptop is a powerhouse, offering
+            unrivaled performance for demanding tasks and a stunning Retina
+            display for a superior computing experience.
           </Tool>
-          <Tool title="Apple Pro Display XDR (Standard Glass)">
-            The only display on the market if you want something HiDPI and
-            bigger than 27”. When you’re working at planetary scale, every pixel
-            you can get counts.
+          <Tool title="Apple iPad Pro">
+            The Apple iPad Pro offers a high-resolution, portable display that's
+            perfect for on-the-go work and creative tasks, providing exceptional
+            clarity and performance. It also works great as an additional
+            display when working on-the-go.
           </Tool>
-          <Tool title="IBM Model M SSK Industrial Keyboard">
-            They don’t make keyboards the way they used to. I buy these any time
-            I see them go up for sale and keep them in storage in case I need
-            parts or need to retire my main.
+          <Tool title="LG Ultrawide 34-in Monitor">
+            The LG Ultrawide 34-inch monitor provides an expansive screen real
+            estate, enhancing your productivity and multitasking capabilities
+            with its stunning display and ergonomic design.
           </Tool>
           <Tool title="Apple Magic Trackpad">
             Something about all the gestures makes me feel like a wizard with
             special powers. I really like feeling like a wizard with special
             powers.
           </Tool>
-          <Tool title="Herman Miller Aeron Chair">
-            If I’m going to slouch in the worst ergonomic position imaginable
-            all day, I might as well do it in an expensive chair.
-          </Tool>
         </ToolsSection>
         <ToolsSection title="Development tools">
-          <Tool title="Sublime Text 4">
-            I don’t care if it’s missing all of the fancy IDE features everyone
-            else relies on, Sublime Text is still the best text editor ever
-            made.
-          </Tool>
-          <Tool title="iTerm2">
-            I’m honestly not even sure what features I get with this that aren’t
-            just part of the macOS Terminal but it’s what I use.
-          </Tool>
-          <Tool title="TablePlus">
-            Great software for working with databases. Has saved me from
-            building about a thousand admin interfaces for my various projects
-            over the years.
-          </Tool>
-        </ToolsSection>
-        <ToolsSection title="Design">
-          <Tool title="Figma">
-            We started using Figma as just a design tool but now it’s become our
-            virtual whiteboard for the entire company. Never would have expected
-            the collaboration features to be the real hook.
-          </Tool>
+          <TechCard />
         </ToolsSection>
         <ToolsSection title="Productivity">
-          <Tool title="Alfred">
-            It’s not the newest kid on the block but it’s still the fastest. The
-            Sublime Text of the application launcher world.
+          <Tool title="Notion">
+            An all-in-one workspace for notes, tasks, databases, and more.
+            Notion keeps everything organized and accessible in one place,
+            making it a versatile tool for productivity.
           </Tool>
-          <Tool title="Reflect">
-            Using a daily notes system instead of trying to keep things
-            organized by topics has been super powerful for me. And with
-            Reflect, it’s still easy for me to keep all of that stuff
-            discoverable by topic even though all of my writing happens in the
-            daily note.
-          </Tool>
-          <Tool title="SavvyCal">
-            Great tool for scheduling meetings while protecting my calendar and
-            making sure I still have lots of time for deep work during the week.
-          </Tool>
-          <Tool title="Focus">
-            Simple tool for blocking distracting websites when I need to just do
-            the work and get some momentum going.
+          <Tool title="GoodNotes">
+            Your digital notebook for handwritten notes and annotations.
+            GoodNotes offers a natural writing experience on your tablet,
+            perfect for sketching ideas or taking notes in meetings.
           </Tool>
         </ToolsSection>
       </div>
