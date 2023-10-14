@@ -64,17 +64,17 @@ export default function About() {
             <p>
               From a young age, I was captivated by the world of technology. I
               can still vividly recall the days when I would immerse myself in
-              the intricate world of computers, delving into terminal games and
-              experimenting with EMACS. This early fascination set the stage for
-              a lifelong journey of exploration and innovation.
+              the intricate world of computers, exploring software and
+              experimenting with new technologies. This early fascination set
+              the stage for a lifelong journey of exploration and innovation.
             </p>
 
             <p>
               Recently, I achieved a major milestone in my journey by completing
               the Full Stack Development Bootcamp at the University of Kansas.
               This experience has equipped me with a solid foundation in web
-              development, and I&apos;m now poised to embark on the next exciting
-              chapter of my career.
+              development, and I&apos;m now poised to embark on the next
+              exciting chapter of my career.
             </p>
 
             <p>
@@ -91,16 +91,31 @@ export default function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="https://twitter.com/thedallasmoore" icon={TwitterIcon}>
+            <SocialLink
+              href="https://twitter.com/thedallasmoore"
+              icon={TwitterIcon}
+            >
               Follow on Twitter
             </SocialLink>
-            <SocialLink href="https://instagram.com/thedallasmoore" icon={InstagramIcon} className="mt-4">
+            <SocialLink
+              href="https://instagram.com/thedallasmoore"
+              icon={InstagramIcon}
+              className="mt-4"
+            >
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="https://github.com/JohnDallasMoore" icon={GitHubIcon} className="mt-4">
+            <SocialLink
+              href="https://github.com/JohnDallasMoore"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="https://www.linkedin.com/in/john-dallas-moore/" icon={LinkedInIcon} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/john-dallas-moore/"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
