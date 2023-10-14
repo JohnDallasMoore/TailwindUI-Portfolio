@@ -176,7 +176,7 @@ function Resume() {
       title: 'Full Stack Student Developer',
       logo: logoKU,
       start: 'March 2023',
-      end: 'September 2023'
+      end: 'September 2023',
     },
     {
       company: 'Stormont Vail Health',
@@ -254,7 +254,12 @@ export default async function Home() {
             Full Stack Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Hi, I'm Dallas Moore. I'm an ambitious professional who recently completed the Full Stack Development Bootcamp at the University of Kansas, dedicated to expanding my web development skills. Passionate about technology, I stay ahead of industry trends and thrive in high-pressure environments. With strong problem-solving abilities, I aim to create impactful and user-friendly web applications.
+            Hi, I&apos;m Dallas Moore. I&apos;m an ambitious professional who recently
+            completed the Full Stack Development Bootcamp at the University of
+            Kansas, dedicated to expanding my web development skills. Passionate
+            about technology, I stay ahead of industry trends and thrive in
+            high-pressure environments. With strong problem-solving abilities, I
+            aim to create impactful and user-friendly web applications.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
