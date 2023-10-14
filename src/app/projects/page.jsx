@@ -7,43 +7,46 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoFate from '@/images/logos/fate.png'
+import logoBrewHub from '@/images/logos/brewhub.png'
+import logoNoteTaker from '@/images/logos/notetaker.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'BrewHub',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Social platform designed for beer enthusiasts to explore breweries, share reviews, and engage with a vibrant beer community.',
+    link: { href: 'https://brewhub-089fbd668392.herokuapp.com/', label: 'BrewHub' },
+    logo: logoBrewHub,
   },
   {
-    name: 'Animaginary',
+    name: 'Note Taker',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Web app for creating, saving, editing, and deleting notes, providing an intuitive interface and reliable note management.',
+    link: { href: 'https://note-taker-0.herokuapp.com/', label: 'Note Taker' },
+    logo: logoNoteTaker,
   },
   {
-    name: 'HelioStream',
+    name: 'FATE',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'PWA text editor that allows you to create, edit, and save text notes or code snippets, with or without an internet connection.',
+    link: { href: 'https://fate-text-editor-b1d395014797.herokuapp.com/', label: 'FATE' },
+    logo: logoFate,
   },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+  // {
+  //   name: 'cosmOS',
+  //   description:
+  //     'The operating system that powers our Planetaria space shuttles.',
+  //   link: { href: '#', label: 'github.com' },
+  //   logo: logoCosmos,
+  // },
+  // {
+  //   name: 'OpenShuttle',
+  //   description:
+  //     'The schematics for the first rocket I designed that successfully made it to orbit.',
+  //   link: { href: '#', label: 'github.com' },
+  //   logo: logoOpenShuttle,
+  // },
 ]
 
 function LinkIcon(props) {
@@ -74,11 +77,11 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
                 src={project.logo}
                 alt=""
-                className="h-8 w-8"
+                className="h-16 w-16" 
                 unoptimized
               />
             </div>
