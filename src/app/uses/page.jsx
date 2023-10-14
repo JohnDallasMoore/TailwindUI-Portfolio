@@ -147,7 +147,7 @@ export default function Uses() {
             display for a superior computing experience.
           </Tool>
           <Tool title="Apple iPad Pro">
-            The Apple iPad Pro offers a high-resolution, portable display that's
+            The Apple iPad Pro offers a high-resolution, portable display that&apos;s
             perfect for on-the-go work and creative tasks, providing exceptional
             clarity and performance. It also works great as an additional
             display when working on-the-go.
