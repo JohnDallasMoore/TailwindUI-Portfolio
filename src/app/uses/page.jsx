@@ -136,6 +136,9 @@ export default function Uses() {
       intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
     >
       <div className="space-y-20">
+        <ToolsSection title="Development tools">
+          <TechCard />
+        </ToolsSection>
         <ToolsSection title="Workstation">
           <Tool title="16” MacBook Pro, M2 Max, 64GB RAM (2023)">
             I was using an Intel-based 16” MacBook Pro prior to this and the
@@ -159,9 +162,6 @@ export default function Uses() {
             special powers. I really like feeling like a wizard with special
             powers.
           </Tool>
-        </ToolsSection>
-        <ToolsSection title="Development tools">
-          <TechCard />
         </ToolsSection>
         <ToolsSection title="Productivity">
           <Tool title="Notion">
