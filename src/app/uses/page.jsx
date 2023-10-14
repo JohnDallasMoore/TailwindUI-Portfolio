@@ -108,14 +108,14 @@ function TechCard() {
   return (
     <ul
       role="list"
-      className="grid grid-cols-3 gap-x-2 gap-y-2 lg:gap-x-12 lg:gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+      className="grid grid-cols-3 gap-x-4 gap-y-4lg:gap-x-12 lg:gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
     >
       {techs.map((tech) => (
         <Card as="li" key={tech.name}>
           <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
             <Image src={tech.logo} alt="" className="h-8 w-8" unoptimized />
           </div>
-          <h2 className="mt-6 text-center text-base font-semibold text-zinc-800 dark:text-zinc-100">
+          <h2 className="mb-6 text-center text-base font-semibold text-zinc-800 dark:text-zinc-100">
             {tech.name}
           </h2>
         </Card>
