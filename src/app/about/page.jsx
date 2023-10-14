@@ -58,7 +58,7 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Dallas Moore. I live in Kansas, where I design the future.
+            I&apos;m Dallas Moore. I live in Kansas, where I design the future.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
@@ -73,19 +73,19 @@ export default function About() {
               Recently, I achieved a major milestone in my journey by completing
               the Full Stack Development Bootcamp at the University of Kansas.
               This experience has equipped me with a solid foundation in web
-              development, and I'm now poised to embark on the next exciting
+              development, and I&apos;m now poised to embark on the next exciting
               chapter of my career.
             </p>
 
             <p>
               Currently, I serve as an Emergency Department Registered Nurse,
-              where I've honed my skills in critical care and compassionate
+              where I&apos;ve honed my skills in critical care and compassionate
               patient care. While my nursing journey has been incredibly
-              rewarding, I'm also passionate about merging my healthcare
+              rewarding, I&apos;m also passionate about merging my healthcare
               background with my tech interests. My goal is to transition into
               the tech industry, specifically as a web developer or software
               engineer. I aspire to contribute to innovative solutions that have
-              a positive impact on people's lives.
+              a positive impact on people&apos;s lives.
             </p>
           </div>
         </div>
