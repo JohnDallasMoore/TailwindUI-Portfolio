@@ -13,7 +13,7 @@ import logoNoteTaker from '@/images/logos/notetaker.png'
 
 const projects = [
   {
-    name: 'BrewHub',
+    name: 'BrewHub (Work in Progress)',
     description:
       'Social platform designed for beer enthusiasts to explore breweries, share reviews, and engage with a vibrant beer community.',
     link: { href: 'https://brewhub-089fbd668392.herokuapp.com/', label: 'BrewHub' },
